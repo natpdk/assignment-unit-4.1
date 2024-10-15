@@ -119,6 +119,14 @@ console.log( "New Array: ", allPositive([2, -3, 4, -5, 6, -7]))
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
 
+//Here is the question I picked: https://edabit.com/challenge/fBJyQSe5Jmbm9hPAG
+//Given an n-sided regular polygon n, return the total sum of internal angles (in degrees).
+function internalAngles(n){
+  let sum = (n - 2) * 180
+  return sum;
+}
+console.log('The sum of the internal angles of the polygon is: ', internalAngles(8));
+console.log('The sum of the internal angles of the polygon is: ', internalAngles(3));
 
 // DO NOT MODIFY
 // Used for automated testing
