@@ -30,7 +30,7 @@ function addNumbers(firstNumber, secondNumber) {
   // return firstNumber + secondNumber;
 }
 console.log('The sum is: ', addNumbers(5, 2));
-
+console.log('The sum is: ', addNumbers(134579, 345678));
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree(num0, num1, num2) {
@@ -38,6 +38,7 @@ function multiplyThree(num0, num1, num2) {
   return answer;
 }
 console.log( 'The answer is: ', multiplyThree(2, 7, 4))
+console.log( 'The answer is: ', multiplyThree(126, 677, 514))
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
@@ -62,13 +63,21 @@ function getLast(array) {
   return array[array.length-1];
 }
 console.log( 'Last item in array is: ', getLast([1, 2, 3]) );
+console.log( 'Last item in array is: ', getLast(['Hi', 'Hello', 'Hey']) );
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find(value, array) {
-
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === value) {
+      return true;
+    }
+  }
+  return false;
 }
+console.log('Is this value here? ', find(8, [2, 4, 6, 8]))
+console.log('Is this value here? ', find(8, [1, 3, 5, 7]))
 
 // ----------------------
 // Stretch Goals
