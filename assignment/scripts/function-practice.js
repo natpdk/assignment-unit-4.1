@@ -106,10 +106,14 @@ console.log( 'The sume of the array is: ', sumAll([1, 5, 2, 2]))
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
-function allPositive() {
-
+function allPositive(array) {
+  return array.filter(num =>{
+    if(num>0){
+      return num;
+    }
+  })
 }
-
+console.log( "New Array: ", allPositive([2, -3, 4, -5, 6, -7]))
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
